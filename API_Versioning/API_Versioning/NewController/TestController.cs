@@ -16,6 +16,7 @@ namespace API_Versioning.NewController
             _repository = repository;
         }
 
+        //[Obsolete("This api is obsolete.")]
         [HttpGet]
         [MapToApiVersion("1.0")] 
         public IActionResult GetAllV1()
