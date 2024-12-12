@@ -1,0 +1,74 @@
+[
+  {
+    "ContainingType": "API_Versioning.Controllers.HeaderBaseVersioningController",
+    "Method": "GetAll",
+    "RelativePath": "api/HeaderBaseVersioning",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_Versioning.Controllers.HeaderBaseVersioningV2Controller",
+    "Method": "GetAll",
+    "RelativePath": "api/HeaderBaseVersioning",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_Versioning.Controllers.QueryVersioningController",
+    "Method": "GetAll",
+    "RelativePath": "api/QueryVersioning",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_Versioning.Controllers.QueryVersioningV2Controller",
+    "Method": "GetAll",
+    "RelativePath": "api/QueryVersioning",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_Versioning.Controllers.PathVersioningController",
+    "Method": "GetAll",
+    "RelativePath": "api/v{version}/PathVersioning",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "version",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_Versioning.Controllers.PathVersioningV2Controller",
+    "Method": "GetAll",
+    "RelativePath": "api/v{version}/PathVersioning",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "version",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
