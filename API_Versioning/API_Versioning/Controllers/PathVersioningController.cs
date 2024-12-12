@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace API_Versioning.Controllers
 {
     [ApiController]
-    [ApiVersion("1.0")]
+    [ApiVersion("1.0", Deprecated = true)]
     [Route("api/v{version:apiVersion}/PathVersioning")]
     public class PathVersioningController : ControllerBase
     {
@@ -16,7 +16,7 @@ namespace API_Versioning.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAll() => Ok(await _repository.GetAllAsync());
+        public IActionResult GetAll() => Ok("This is version 1.0 of api path versioning");
 
     }
 }
