@@ -5,7 +5,7 @@ namespace API_Versioning.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    [ApiVersion("1.0")]
+    [ApiVersion("1.0", Deprecated = true)]
     public class QueryVersioningController : ControllerBase
     {
         private readonly IProductRepository _repository;
@@ -16,7 +16,7 @@ namespace API_Versioning.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAll() => Ok(await _repository.GetAllAsync());
+        public IActionResult GetAll() => Ok("This is version 1.0 of api query params versioning");
 
     }
 }

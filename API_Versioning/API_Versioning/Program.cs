@@ -19,7 +19,6 @@ builder.Services.AddApiVersioning(options =>
     options.DefaultApiVersion = new ApiVersion(1, 0);
     options.ReportApiVersions = true;
 
-    // Combine readers for query string, headers, and media types
     options.ApiVersionReader = ApiVersionReader.Combine(
        new QueryStringApiVersionReader("api-version"),
        new HeaderApiVersionReader("X-API-Version"),
@@ -27,17 +26,13 @@ builder.Services.AddApiVersioning(options =>
     );
 });
 
-// Add controllers
 builder.Services.AddControllers();
 
-// Configure Swagger with support for multiple API versions
 builder.Services.AddSwaggerGen(c =>
 {
-    // Define SwaggerDocs for each API version
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "API Version 1", Version = "v1" });
     c.SwaggerDoc("v2", new OpenApiInfo { Title = "API Version 2", Version = "v2" });
 
-    // Handle conflicting methods and paths by using the ConflictingActionsResolver
     c.ResolveConflictingActions(apiDescriptions => apiDescriptions.First());
 
 });
@@ -52,14 +47,12 @@ using (var scope = app.Services.CreateScope())
     context.Products.Add(new Product { Name = "Sample Product", Price = 10.99M });
     context.SaveChanges();
 }
-// Add the middleware to notify deprecated versions
 //app.UseMiddleware<ApiDeprecationMiddleware>();
 
 app.UseSwagger();
 
 app.UseSwaggerUI(c =>
 {
-    // Enable version switching in Swagger UI
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "API Versioning v1");
     c.SwaggerEndpoint("/swagger/v2/swagger.json", "API Versioning v2");
 });

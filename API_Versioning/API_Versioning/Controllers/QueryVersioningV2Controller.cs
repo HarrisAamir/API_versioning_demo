@@ -8,6 +8,6 @@ namespace API_Versioning.Controllers
     public class QueryVersioningV2Controller : ControllerBase
     {
         [HttpGet]
-        public IActionResult GetAll() => Ok("This is version 2 of the Products API.");
+        public IActionResult GetAll() => Ok("This is version 2.0 of api query params versioning");
     }
 }
