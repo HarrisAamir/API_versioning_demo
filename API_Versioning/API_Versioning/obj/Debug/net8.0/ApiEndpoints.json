@@ -40,6 +40,26 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "API_Versioning.NewController.TestQueryController",
+    "Method": "GetAllV1",
+    "RelativePath": "api/TestQuery",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_Versioning.NewController.TestQueryController",
+    "Method": "GetAllV",
+    "RelativePath": "api/TestQuery",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "API_Versioning.Controllers.PathVersioningController",
     "Method": "GetAll",
     "RelativePath": "api/v{version}/PathVersioning",
@@ -59,6 +79,38 @@
     "ContainingType": "API_Versioning.Controllers.PathVersioningV2Controller",
     "Method": "GetAll",
     "RelativePath": "api/v{version}/PathVersioning",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "version",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_Versioning.NewController.TestController",
+    "Method": "GetAllV1",
+    "RelativePath": "api/v{version}/Test",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "version",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_Versioning.NewController.TestController",
+    "Method": "GetAllV",
+    "RelativePath": "api/v{version}/Test",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

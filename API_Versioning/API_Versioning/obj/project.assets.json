@@ -1094,11 +1094,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\imran.m\\source\\repos\\API_Versioning\\API_Versioning\\API_Versioning.csproj",
+      "projectUniqueName": "E:\\Codacy-Project\\API_versioning_demo\\API_Versioning\\API_Versioning\\API_Versioning.csproj",
       "projectName": "API_Versioning",
-      "projectPath": "C:\\Users\\imran.m\\source\\repos\\API_Versioning\\API_Versioning\\API_Versioning.csproj",
+      "projectPath": "E:\\Codacy-Project\\API_versioning_demo\\API_Versioning\\API_Versioning\\API_Versioning.csproj",
       "packagesPath": "C:\\Users\\imran.m\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\imran.m\\source\\repos\\API_Versioning\\API_Versioning\\obj\\",
+      "outputPath": "E:\\Codacy-Project\\API_versioning_demo\\API_Versioning\\API_Versioning\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\imran.m\\AppData\\Roaming\\NuGet\\NuGet.Config",
