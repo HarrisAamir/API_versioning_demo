@@ -1,5 +1,6 @@
 using API_Versioning.Context;
 using API_Versioning.Interface;
+using API_Versioning.Middleware;
 using API_Versioning.Model;
 using API_Versioning.Service;
 using Microsoft.AspNetCore.Mvc;
@@ -48,6 +49,10 @@ using (var scope = app.Services.CreateScope())
     context.SaveChanges();
 }
 //app.UseMiddleware<ApiDeprecationMiddleware>();
+
+
+
+app.UseMiddleware<ObsoleteApiMiddleware>();
 
 app.UseSwagger();
 
